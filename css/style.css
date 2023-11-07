@@ -98,9 +98,9 @@ button{
         width: calc(100% / 2 - 20px)
     }
 }
-/* media query max-width 460px, riduzione della sidebar */
+/* media query max-width 360px, riduzione della sidebar */
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 360px){
     #sidebar{
         width: 50px;
     }
