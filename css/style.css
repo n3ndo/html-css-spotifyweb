@@ -90,3 +90,11 @@ button{
         width: calc(100% / 4 - 20px);
     }
 }
+
+/* media query max-width  */
+
+@media screen and (max-width: 480px){
+    .col{
+        width: calc(100% / 2 - 20px)
+    }
+}
