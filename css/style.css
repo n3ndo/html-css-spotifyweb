@@ -91,10 +91,20 @@ button{
     }
 }
 
-/* media query max-width  */
+/* media query max-width 480px */
 
 @media screen and (max-width: 480px){
     .col{
         width: calc(100% / 2 - 20px)
+    }
+}
+/* media query max-width 460px, riduzione della sidebar */
+
+@media screen and (max-width: 460px){
+    #sidebar{
+        width: 50px;
+    }
+    #content{
+        width: calc(100vw - 50px);
     }
 }
