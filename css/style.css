@@ -65,7 +65,6 @@ button{
 .row{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .col{
@@ -79,4 +78,15 @@ button{
 
 .margin-top-20{
     margin-top: 20px;
+}
+
+/* media query max-width 780px */
+
+@media screen and (max-width: 780px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .col{
+        width: calc(100% / 4 - 20px);
+    }
 }
