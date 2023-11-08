@@ -94,6 +94,16 @@ button{
     width: calc(100% / 6 - 20px);
     margin: 10px;
 }
+.col-25{
+    width: 25%;
+}
+.col-50{
+    width: 50%;
+}
+.col-100{
+    width: 100%;
+}
+
 .cover{
     position: relative;
     width: 100%;
@@ -123,6 +133,10 @@ img{
 }
 
 /* common */
+.ai-center{
+    align-items: center;
+}
+
 
 .margin-top-20{
     margin-top: 20px;
@@ -136,9 +150,24 @@ img{
 .margin-0-10{
     margin: 0px 10px;
 }
+.margin-10-10{
+    margin: 10px 10px;
+}
+.margin-20-10{
+    margin: 20px 10px;
+}
 
 .padding-5-0{
     padding: 5px 0px;
+}
+.padding-20-0{
+    padding: 20px 0px;
+}
+.padding-0-10{
+    padding: 0px 10px;
+}
+.padding-left-20{
+    padding-left: 20px;
 }
 
 .text-center{
@@ -167,6 +196,9 @@ img{
 
 .width-70{
     width: 70%;
+}
+.width-40-px{
+    width: 40px;
 }
 .width-15{
     width: 15%;

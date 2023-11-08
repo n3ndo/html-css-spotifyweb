@@ -22,13 +22,13 @@
                     </div>
                     <div class="margin-20-0 font-size-13">
                         <div class="nav">
-                            <p class="grey"><img class="width-15" src="./img/home.svg" alt="home"> Home </p>
+                            <p class="grey flex ai-center"><img class="width-15" src="./img/home.svg" alt="home"> Home </p>
                         </div>
                         <div class="nav">
-                            <p class="grey"><img class="width-15" src="./img/search.svg" alt="cerca"> Cerca</p>
+                            <p class="grey flex ai-center"><img class="width-15" src="./img/search.svg" alt="cerca"> Cerca</p>
                         </div>
                         <div class="nav">
-                            <p class="grey"><img class="width-15" src="./img/libreria.svg" alt="libreria"> La Tua Libreria</p>
+                            <p class="grey flex ai-center"><img class="width-15" src="./img/libreria.svg" alt="libreria"> La Tua Libreria</p>
                         </div>
                     </div>
                     <div class="list">
@@ -56,7 +56,7 @@
                 <div class="profile-sidebar margin-0-10">
                     <div class="grey font-size-13"><i class="fa-regular fa-circle-down" style="color: #a3a3a3;"></i> installa app</div>
                     <hr class="margin-10-0">
-                    <p class="grey font-size-13"><img class="width-10" src="./img/profile.svg" alt="profile"><strong>John Doe</strong></p>
+                    <p class="white font-size-13 flex ai-center margin-10-0"><img class="width-10" src="./img/profile.svg" alt="profile"><strong class="margin-0-10">John Doe</strong></p>
                 </div>
             </div>
             <div id="content">
@@ -66,6 +66,12 @@
                 </header>
                 <div class="page-content">
                     <div class="container">
+                        <!-- ALBUM -->
+                        <div class="row">
+                            <div class="col-100 margin-20-10">
+                                <div class="white"><strong>Recently played</strong></div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col text-center">
                                 <div class="cover">
@@ -128,6 +134,13 @@
                                 <p class="font-size-10 padding-5-0 grey">Subtitle</p>
                             </div>
                         </div>
+                        <!-- CREATO PER JOHN DOE -->
+                        <div class="row">
+                            <div class="col-100 margin-10-10">
+                                <div class="white"><strong>Creato per John Doe</strong></div>
+                                <div class="grey font-size-10 margin-10-0">Più ascolti, Più accurati saranno i suggerimenti.</div>
+                            </div>
+                        </div>
                         <div class="row margin-top-20">
                             <h2><strong></strong></h2>
                             <div class="col text-center">
@@ -149,6 +162,13 @@
                                 <p class="white font-size-13 padding-5-0"><strong>Dally Mix 1</strong></p>
                             </div>
                         </div>
+                        <!-- ARTISTI PIU' POPOLARI -->
+                        <div class="row">
+                            <div class="col-100 margin-10-10">
+                                <div class="white"><strong>Artisti più popolari</strong></div>
+                                <div class="grey margin-0-10 font-size-10">Più ascolti, più accurati saranno i suggerimenti</div>
+                            </div>
+                        </div>
                         <div class="row margin-top-20">
                             <div class="col text-center">
                                 <img src="./img/youg.jpeg" alt="">
@@ -162,6 +182,26 @@
             </div>
         </div>
     </div>
-    <div id="player"></div>
+    <div id="player">
+        <div class="container">
+            <div class="row">
+                <div class="col-25 padding-20-0 flex ai-center">
+                    <img class="margin-0-10 width-40-px" src="./img/sinister.jpeg" alt="sinister">
+                    <span>
+                        <div class="white font-size-10"><strong>Sinister</strong></div>
+                        <div class="grey font-size-10">Brano Nome</div>
+                    </span>
+                        <i class="fa-regular fa-heart padding-left-20" style="color: #a3a3a3;"></i>
+                        <i class="fa-regular fa-folder padding-0-10" style="color: #a3a3a3;"></i>
+                </div>
+                <div class="col-50"></div>
+                <div class="col-25 padding-20-0 flex ai-center">
+                    <i class="fa-solid fa-list-ul font-size-13" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-display font-size-13 padding-0-10" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-volume-high font-size-13" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
