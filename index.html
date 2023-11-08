@@ -4,12 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Spotify</title>
 </head>
 <body>
     <div id="main-page">
         <div class="main-content">
-            <div id="sidebar"></div>
+            <!-- SIDEBAR -->
+            <div class="sidebar">
+                <!-- LOGO, NAV E PLAYLIST -->
+                <div class="playlist-sidebar margin-0-10">
+                    <div class="logo margin-10-0">
+                        <img class="width-70" src="./img/logo.svg" alt="">
+                    </div>
+                    <div class="margin-20-0 font-size-13">
+                        <div class="nav">
+                            <p class="grey"><img class="width-15" src="./img/home.svg" alt="home"> Home </p>
+                        </div>
+                        <div class="nav">
+                            <p class="grey"><img class="width-15" src="./img/search.svg" alt="cerca"> Cerca</p>
+                        </div>
+                        <div class="nav">
+                            <p class="grey"><img class="width-15" src="./img/libreria.svg" alt="libreria"> La Tua Libreria</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <p class="margin-10-0 white font-size-13"><strong>PLAYLIST</strong></p>
+                        <div class="margin-10-0">
+                            <span class="aggiungi">
+                                <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                            </span>
+                            <span class="grey margin-0-10 font-size-13">Crea Playlist</span>
+                        </div>
+                        <div class="play-list">
+                            <ul class="grey margin-20-0 font-size-13">
+                                <li class="margin-10-0">Nome Playlist</li>
+                                <li class="margin-10-0">Nome Playlist</li>
+                                <li class="margin-10-0">Nome Playlist</li>
+                                <li class="margin-10-0">Nome Playlist</li>
+                                <li class="margin-10-0">Nome Playlist</li>
+                                <li class="margin-10-0">Nome Playlist</li>
+                                <li class="margin-10-0">Nome Playlist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROFILO UTENTE  -->
+                <div class="profile-sidebar margin-0-10">
+                    <div class="grey font-size-13"><i class="fa-regular fa-circle-down" style="color: #a3a3a3;"></i> installa app</div>
+                    <hr class="margin-10-0">
+                    <p class="grey font-size-13"><img class="width-10" src="./img/profile.svg" alt="profile"><strong>John Doe</strong></p>
+                </div>
+            </div>
             <div id="content">
                 <!-- HEADER -->
                 <header class="relative">
@@ -19,32 +68,62 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="cover">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play font-size-30" style="color: #ffffff;"></i>
+                                    </div>
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                </div>
                                 <p class="white font-size-13 padding-5-0"><strong>Heavy Metal</strong></p>
                                 <p class="font-size-10 padding-5-0 grey">Subtitle</p>
                             </div>
                             <div class="col text-center">
-                                <img src="./img/stranger.jpeg" alt="">
+                                <div class="cover">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play font-size-30" style="color: #ffffff;"></i>
+                                    </div>
+                                    <img src="./img/stranger.jpeg" alt="">
+                                </div>
                                 <p class="white font-size-13 padding-5-0"><strong>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</strong></p>
                                 <p class="font-size-10 padding-5-0 grey">Kyle Dixon & Michael Stein</p>
                             </div>
                             <div class="col text-center">
-                                <img src="./img/aquietplace.jpeg" alt="">
+                                <div class="cover">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play font-size-30" style="color: #ffffff;"></i>
+                                    </div>
+                                    <img src="./img/aquietplace.jpeg" alt="">
+                                </div>
                                 <p class="white font-size-13 padding-5-0"><strong>A quiet place</strong></p>
                                 <p class="font-size-10 padding-5-0 grey">Subtitle</p>
                             </div>
                             <div class="col text-center">
-                                <img src="./img/split.jpeg" alt="">
+                                <div class="cover">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play font-size-30" style="color: #ffffff;"></i>
+                                    </div>
+                                    <img src="./img/split.jpeg" alt="">
+                                </div>
                                 <p class="white font-size-13 padding-5-0"><strong>Split</strong></p>
                                 <p class="font-size-10 padding-5-0 grey">Subtitle</p>
                             </div>
                             <div class="col text-center">
-                                <img src="./img/cure.jpeg" alt="">
+                                <div class="cover">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play font-size-30" style="color: #ffffff;"></i>
+                                    </div>
+                                    <img src="./img/cure.jpeg" alt="">
+                                </div>
                                 <p class="white font-size-13 padding-5-0"><strong>A cure for wellness</strong></p>
                                 <p class="font-size-10 padding-5-0 grey">Subtitle</p>
                             </div>
                             <div class="col text-center">
-                                <img src="./img/sinister.jpeg" alt="">
+                                <div class="cover">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play font-size-30" style="color: #ffffff;"></i>
+                                    </div>
+                                    <img src="./img/sinister.jpeg" alt="">
+                                </div>
                                 <p class="white font-size-13 padding-5-0"><strong>Sinister</strong></p>
                                 <p class="font-size-10 padding-5-0 grey">Subtitle</p>
                             </div>
@@ -52,11 +131,21 @@
                         <div class="row margin-top-20">
                             <h2><strong></strong></h2>
                             <div class="col text-center">
-                                <img src="./img/radar.jpeg" alt="">
+                                <div class="cover">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play font-size-30" style="color: #ffffff;"></i>
+                                    </div>
+                                    <img src="./img/radar.jpeg" alt="">
+                                </div>
                                 <p class="white font-size-13 padding-5-0"><strong>Release Radar</strong></p>
                             </div>
                             <div class="col text-center">
-                                <img src="./img/mixdaily.jpeg" alt="">
+                                <div class="cover">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play font-size-30" style="color: #ffffff;"></i>
+                                    </div>
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                </div>
                                 <p class="white font-size-13 padding-5-0"><strong>Dally Mix 1</strong></p>
                             </div>
                         </div>
