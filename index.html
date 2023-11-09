@@ -138,7 +138,7 @@
                         <div class="row">
                             <div class="col-100 margin-10-10">
                                 <div class="white"><strong>Creato per John Doe</strong></div>
-                                <div class="grey font-size-10 margin-10-0">Più ascolti, Più accurati saranno i suggerimenti.</div>
+                                <div class="grey font-size-10 margin-top-10">Più ascolti, Più accurati saranno i suggerimenti.</div>
                             </div>
                         </div>
                         <div class="row margin-top-20">
@@ -182,9 +182,10 @@
             </div>
         </div>
     </div>
+    <!-- PLAYER -->
     <div id="player">
-        <div class="container">
-            <div class="row">
+        <div class="container height-100">
+            <div class="row height-100 jc-space-between">
                 <div class="col-25 padding-20-0 flex ai-center">
                     <img class="margin-0-10 width-40-px" src="./img/sinister.jpeg" alt="sinister">
                     <span>
@@ -194,11 +195,39 @@
                         <i class="fa-regular fa-heart padding-left-20" style="color: #a3a3a3;"></i>
                         <i class="fa-regular fa-folder padding-0-10" style="color: #a3a3a3;"></i>
                 </div>
-                <div class="col-50"></div>
+                <div class="col-50 flex">
+                    <div class="width-100 padding-15-0">
+                        <div class="width-100 flex jc-center">
+                            <div class="width-60 text-center jc-space-around ai-center padding-bottom-10 font-size-13 flex">
+                                <span><i class="fa-solid fa-shuffle" style="color: #ffffff;"></i></span>
+                                <span><i class="fa-solid fa-backward-step" style="color: #ffffff;"></i></span>
+                                <span> <i class="fa-regular fa-circle-play font-size-25" style="color: #ffffff;"></i></span>
+                                <span><i class="fa-solid fa-forward-step" style="color: #ffffff;"></i></span>
+                                <span><i class="fa-solid fa-arrow-rotate-right" style="color: #ffffff;"></i></span>
+                            </div>
+                        </div>
+                        <div class="controller-time flex ai-center padding-0-5">
+                            <div class="controller-time-min font-size-13 white">0:25</div>
+                            <div class="player-bar radius-15 margin-0-10">
+                                <div class="time-bar radius-15">
+                                    <div class="time-bar-point"></div>
+                                </div>
+                            </div>
+                            <div class="controller-time-max font-size-13 white">4:35</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-25 padding-20-0 flex ai-center">
-                    <i class="fa-solid fa-list-ul font-size-13" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-display font-size-13 padding-0-10" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-volume-high font-size-13" style="color: #ffffff;"></i>
+                    <div class="widget flex ai-center">
+                        <i class="fa-solid fa-list-ul font-size-13" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-display font-size-13 padding-0-10" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-volume-high font-size-13" style="color: #ffffff;"></i>
+                        <div class="volume-bar radius-15">
+                            <div class="effective-volume radius-15">
+                                <div class="volume-bar-point"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -15,6 +15,7 @@ body{
 #player{
     height: 75px;
     background-color: rgb(40, 40, 40);
+
 }
 
 .main-content{
@@ -95,7 +96,7 @@ button{
     margin: 10px;
 }
 .col-25{
-    width: 25%;
+    width: 200px;
 }
 .col-50{
     width: 50%;
@@ -132,14 +133,100 @@ img{
     padding: 5px 4px 5px 7px;
 }
 
+.volume-bar{
+    height: 4px;
+    width: 80px;
+    margin: 0px 10px;
+    background-color: grey;
+    cursor: pointer;
+}
+.effective-volume{
+    height: 4px;
+    width: 25%;
+    background-color: lightgrey;
+    position: relative;
+}
+.volume-bar-point{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.controller-time{
+    justify-content: space-between;
+    width: 100%;
+}
+.player-bar{
+    height: 4px;
+    width: 80%;
+    background-color: grey;
+    cursor: pointer;
+}
+.time-bar{
+    height: 4px;
+    width: 20%;
+    background-color: lightgrey;
+    position: relative;
+}
+.time-bar-point{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    display: none;
+}
+/* player bar hover */
+.player-bar:hover .time-bar{
+    background-color: lightgreen;
+}
+.player-bar:hover .time-bar-point{
+    display: block;
+}
+
+/* volume bar hover */
+.volume-bar:hover .effective-volume{
+    background-color: lightgreen;
+}
+.volume-bar:hover .volume-bar-point{
+    display: block;
+}
 /* common */
 .ai-center{
     align-items: center;
+}
+.jc-space-between{
+    justify-content: space-between;
+}
+.jc-space-around{
+    justify-content: space-around;
+}
+.jc-center{
+    justify-content: center;
+}
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.radius-15{
+    border-radius: 15px;
 }
 
 
 .margin-top-20{
     margin-top: 20px;
+}
+.margin-top-10{
+    margin-top: 10px;
 }
 .margin-10-0{
     margin: 10px 0px;
@@ -157,8 +244,18 @@ img{
     margin: 20px 10px;
 }
 
+.height-100{
+    height: 100%;
+}
+
+.padding-0-5{
+    padding: 0px 5px;
+}
 .padding-5-0{
     padding: 5px 0px;
+}
+.padding-15-0{
+    padding: 15px 0px;
 }
 .padding-20-0{
     padding: 20px 0px;
@@ -168,6 +265,9 @@ img{
 }
 .padding-left-20{
     padding-left: 20px;
+}
+.padding-bottom-10{
+    padding-bottom: 10px;
 }
 
 .text-center{
@@ -187,6 +287,9 @@ img{
 .font-size-13{
     font-size: 13px;
 }
+.font-size-25{
+    font-size: 25px;
+}
 .font-size-30{
     font-size: 30px;
 }
@@ -194,8 +297,14 @@ img{
     font-size: 10px;
 }
 
+.width-100{
+    width: 100%;
+}
 .width-70{
     width: 70%;
+}
+.width-60{
+    width: 60%;
 }
 .width-40-px{
     width: 40px;
@@ -209,7 +318,7 @@ img{
 /* media query max-width 780px */
 
 @media screen and (max-width: 780px){
-    .row{
+    .page-content .row{
         flex-wrap: wrap;
     }
     .col{
@@ -217,20 +326,23 @@ img{
     }
 }
 
-/* media query max-width 480px */
+/* media query max-width 500px */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
     .col{
         width: calc(100% / 2 - 20px)
     }
 }
-/* media query max-width 360px, riduzione della sidebar */
+/* media query max-width 460px, riduzione della sidebar */
 
-@media screen and (max-width: 360px){
-    #sidebar{
+@media screen and (max-width: 460px){
+    .sidebar{
         width: 50px;
     }
     #content{
         width: calc(100vw - 50px);
+    }
+    .col-25 span, .volume-bar, .sidebar .playlist-sidebar, .sidebar .profile-sidebar{
+        display: none;
     }
 }
