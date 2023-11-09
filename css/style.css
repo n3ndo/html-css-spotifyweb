@@ -96,10 +96,10 @@ button{
     margin: 10px;
 }
 .col-25{
-    width: 200px;
+    width: 25%;
 }
 .col-50{
-    width: 50%;
+    width: 300px;
 }
 .col-100{
     width: 100%;
@@ -200,6 +200,10 @@ img{
 }
 .volume-bar:hover .volume-bar-point{
     display: block;
+}
+
+.nav:hover .nav{
+    color: white;
 }
 /* common */
 .ai-center{
